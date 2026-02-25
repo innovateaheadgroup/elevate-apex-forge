@@ -34,15 +34,6 @@ const Contact = () => {
                 All inquiries are treated with the highest level of confidentiality. Our team will respond within one business day.
               </p>
 
-              {/* Calendar placeholder */}
-              <div className="bg-section-alt rounded-sm border border-border p-8">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-3">
-                  Executive Calendar
-                </p>
-                <div className="w-full h-48 bg-muted rounded-sm flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground font-body">Calendar Booking Embed</p>
-                </div>
-              </div>
             </div>
 
             <div>
