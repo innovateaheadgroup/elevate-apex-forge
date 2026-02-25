@@ -196,7 +196,7 @@ const Index = () => {
               </ul>
             </div>
             <div className="relative">
-              <div className="aspect-[3/4] overflow-hidden rounded-sm">
+              <div className="aspect-square max-w-[280px] mx-auto overflow-hidden rounded-full border-4 border-border shadow-lg bg-muted">
                 <img
                   src={garyPortrait}
                   alt="Gary Gopinathan — Founder, Innovate Ahead Group"
