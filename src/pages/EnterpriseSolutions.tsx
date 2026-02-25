@@ -53,15 +53,166 @@ const EnterpriseSolutions = () => {
             ))}
           </div>
 
-          {/* Architecture diagram placeholder */}
-          <div className="mt-20 bg-section-alt rounded-sm border border-border p-12 text-center">
-            <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-3">
-              Architecture Overview
-            </p>
-            <div className="w-full h-48 bg-muted rounded-sm flex items-center justify-center">
-              <p className="text-sm text-muted-foreground font-body">
-                Enterprise Architecture Diagram
+          {/* Operating Model Architecture */}
+          <div className="mt-20">
+            <div className="max-w-3xl mb-12">
+              <div className="divider-accent mb-6" />
+              <h2 className="text-3xl md:text-4xl font-heading mb-4">
+                Operating Model Architecture
+              </h2>
+              <p className="text-muted-foreground font-body leading-relaxed">
+                Our advisory model integrates strategy, systems design and execution oversight into a cohesive transformation framework.
               </p>
+            </div>
+            <div className="bg-section-alt rounded-sm border border-border p-8 md:p-12">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
+                {/* Row 1: Strategy Layer */}
+                <div className="md:col-span-5 mb-8">
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-4 text-center">Strategy Layer</p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {["Executive Diagnostic", "Strategic Blueprint", "Governance Framework"].map((item) => (
+                      <div key={item} className="bg-navy text-primary-foreground rounded-sm p-4 text-center">
+                        <p className="text-sm font-body font-semibold">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Arrow */}
+                <div className="md:col-span-5 flex justify-center mb-8">
+                  <div className="w-px h-8 bg-electric relative">
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-electric" />
+                  </div>
+                </div>
+
+                {/* Row 2: Systems Layer */}
+                <div className="md:col-span-5 mb-8">
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-4 text-center">Systems & Technology Layer</p>
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    {["CRM & Data Architecture", "AI & Automation", "API Integration", "Cloud Infrastructure"].map((item) => (
+                      <div key={item} className="bg-background border border-border rounded-sm p-4 text-center">
+                        <p className="text-sm font-body font-semibold">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Arrow */}
+                <div className="md:col-span-5 flex justify-center mb-8">
+                  <div className="w-px h-8 bg-electric relative">
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-electric" />
+                  </div>
+                </div>
+
+                {/* Row 3: Execution Layer */}
+                <div className="md:col-span-5 mb-8">
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-4 text-center">Execution & Delivery Layer</p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {["Implementation Oversight", "Change Management", "Continuous Optimisation"].map((item) => (
+                      <div key={item} className="bg-muted rounded-sm p-4 text-center">
+                        <p className="text-sm font-body font-semibold">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Enterprise Architecture Diagram */}
+          <div className="mt-20">
+            <div className="max-w-3xl mb-12">
+              <div className="divider-accent mb-6" />
+              <h2 className="text-3xl md:text-4xl font-heading mb-4">
+                Enterprise Architecture Overview
+              </h2>
+              <p className="text-muted-foreground font-body leading-relaxed">
+                A layered architecture delivering secure, scalable and intelligent enterprise systems.
+              </p>
+            </div>
+            <div className="bg-section-alt rounded-sm border border-border p-8 md:p-12">
+              {/* Presentation / Client Layer */}
+              <div className="mb-6">
+                <div className="bg-navy text-primary-foreground rounded-sm p-5">
+                  <p className="text-xs uppercase tracking-widest font-body mb-3 opacity-70">Presentation Layer</p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    {["Web Portal", "Mobile App", "Client Dashboard", "Admin Console"].map((item) => (
+                      <div key={item} className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-sm p-3 text-center">
+                        <p className="text-xs font-body font-medium">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Connector */}
+              <div className="flex justify-center mb-6">
+                <div className="flex items-center gap-2">
+                  <div className="h-px w-16 bg-border" />
+                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-body">API Gateway</span>
+                  <div className="h-px w-16 bg-border" />
+                </div>
+              </div>
+
+              {/* Application / Business Logic Layer */}
+              <div className="mb-6">
+                <div className="border border-border bg-background rounded-sm p-5">
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-3">Application & Business Logic</p>
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                    {["Auth & Identity", "Workflow Engine", "AI/ML Services", "Notification Service", "Analytics Engine"].map((item) => (
+                      <div key={item} className="bg-muted rounded-sm p-3 text-center">
+                        <p className="text-xs font-body font-medium">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Connector */}
+              <div className="flex justify-center mb-6">
+                <div className="flex items-center gap-2">
+                  <div className="h-px w-16 bg-border" />
+                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-body">Service Bus</span>
+                  <div className="h-px w-16 bg-border" />
+                </div>
+              </div>
+
+              {/* Integration Layer */}
+              <div className="mb-6">
+                <div className="border border-electric/30 bg-electric/5 rounded-sm p-5">
+                  <p className="text-xs uppercase tracking-widest text-electric font-body mb-3">Integration Layer</p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    {["CRM (Nexus)", "ERP Connector", "Payment Gateway", "Third-Party APIs"].map((item) => (
+                      <div key={item} className="bg-background border border-border rounded-sm p-3 text-center">
+                        <p className="text-xs font-body font-medium">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Connector */}
+              <div className="flex justify-center mb-6">
+                <div className="flex items-center gap-2">
+                  <div className="h-px w-16 bg-border" />
+                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-body">Encrypted</span>
+                  <div className="h-px w-16 bg-border" />
+                </div>
+              </div>
+
+              {/* Data Layer */}
+              <div>
+                <div className="bg-muted rounded-sm p-5">
+                  <p className="text-xs uppercase tracking-widest text-muted-foreground font-body mb-3">Data & Infrastructure Layer</p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    {["PostgreSQL / Data Lake", "Redis Cache", "File Storage", "Monitoring & Logging"].map((item) => (
+                      <div key={item} className="bg-background border border-border rounded-sm p-3 text-center">
+                        <p className="text-xs font-body font-medium">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
