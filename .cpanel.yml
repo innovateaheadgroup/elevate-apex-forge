@@ -3,4 +3,8 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/innovate/public_html/innovateaheadgroup.com/
     - /bin/mkdir -p "$DEPLOYPATH"
-    - /usr/bin/rsync -a --delete --exclude=".git" ./dist/ "$DEPLOYPATH"
+    - /usr/bin/rsync -a --delete \
+        --exclude=".git" \
+        --exclude=".well-known" \
+        --exclude="cgi-bin" \
+        ./ "$DEPLOYPATH"
